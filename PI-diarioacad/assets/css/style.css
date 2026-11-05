@@ -1,0 +1,132 @@
+/* 1. Definição das Cores Padrão (Modo Claro) */
+:root {
+    --bg-color: #f4f7f6;
+    --container-bg: #ffffff;
+    --text-color: #34495e;
+    --heading-color: #2c3e50;
+    --input-bg: #ffffff;
+    --input-border: #ccc;
+    --input-text: #000000;
+    --btn-bg: #2980b9;
+    --btn-hover: #1b6391;
+    --tab-color: #7f8c8d;
+    --tab-active-color: #2980b9;
+}
+
+/* 2. Detecção Automática do Tema Escuro do Sistema */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #121212;
+        --container-bg: #1e1e1e;
+        --text-color: #e0e0e0;
+        --heading-color: #ffffff;
+        --input-bg: #2d2d2d;
+        --input-border: #444444;
+        --input-text: #ffffff;
+        --btn-bg: #3498db;
+        --btn-hover: #2980b9;
+        --tab-color: #a0a0a0;
+        --tab-active-color: #3498db;
+    }
+}
+
+/* 3. Aplicação das Variáveis nos Elementos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--text-color);
+}
+
+.login-container {
+    background: var(--container-bg);
+    width: 100%;
+    max-width: 420px;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.login-header h2 {
+    color: var(--heading-color);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.role-tabs {
+    display: flex;
+    border-bottom: 2px solid var(--input-border);
+    margin-bottom: 1.5rem;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 0.6rem 0;
+    background: none;
+    border: none;
+    font-weight: 600;
+    color: var(--tab-color);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+}
+
+.tab-btn.active {
+    color: var(--tab-active-color);
+    border-bottom: 2px solid var(--tab-active-color);
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--input-bg);
+    color: var(--input-text);
+    border: 1px solid var(--input-border);
+    border-radius: 4px;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: var(--tab-active-color);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--btn-bg);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: var(--btn-hover);
+}

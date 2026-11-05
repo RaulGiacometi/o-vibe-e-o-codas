@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiarioAcad - Login</title>
+    <!-- Vinculo com o arquivo de estilos -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+        <div class="login-header">
+            <h2>DiarioAcad</h2>
+        </div>
+
+        <!-- Navegação por Perfis -->
+        <div class="role-tabs">
+            <button type="button" class="tab-btn active" id="btn-aluno">Aluno</button>
+            <button type="button" class="tab-btn" id="btn-professor">Professor</button>
+            <button type="button" class="tab-btn" id="btn-coordenador">Coordenador</button>
+        </div>
+
+        <!-- Formulário de Login -->
+        <form id="loginForm" action="#" method="POST">
+
+            <div class="form-group">
+                <label id="labelIdentifier" for="identifier">RA (Registro Acadêmico)</label>
+                <input type="text" id="identifier" name="identifier" placeholder="Digite seu RA" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+            </div>
+
+            <button type="submit" class="btn-submit">Entrar</button>
+        </form>
+    </div>
+
+    <!-- Vinculo com o arquivo de scripts -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
