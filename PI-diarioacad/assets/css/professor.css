@@ -1,166 +1,163 @@
-/* Definição das Cores Padrão (Modo Claro) */
+/* ==========================================================================
+   1. VARIÁVEIS DE CORES DO PROFESSOR (Tons de Verde Institucional)
+   ========================================================================== */
 :root {
-    --bg-color: #f4f7f6;
-    --container-bg: #ffffff;
-    --text-color: #34495e;
-    --heading-color: #2c3e50;
-    --border-color: #e0e0e0;
-    --primary-color: #27ae60;
-    /* Verde institucional diferenciando do aluno */
-    --primary-hover: #1e8449;
-    --card-hover-shadow: rgba(0, 0, 0, 0.12);
-    --accent-badge: #e8f8f5;
+  --bg-color: #f4f7f6;
+  --container-bg: #ffffff;
+  --text-color: #34495e;
+  --heading-color: #2c3e50;
+  --border-color: #e0e0e0;
+  --primary-color: #27ae60;       /* Verde principal do professor */
+  --primary-hover: #1e8449;
+  --card-hover-shadow: rgba(0, 0, 0, 0.12);
+  --accent-badge: #e8f8f5;        /* Fundo verde claro para os ícones */
 }
 
-/* Detecção Automática do Tema Escuro do Sistema */
+/* Modo Escuro Automático */
 @media (prefers-color-scheme: dark) {
-    :root {
-        --bg-color: #121212;
-        --container-bg: #1e1e1e;
-        --text-color: #e0e0e0;
-        --heading-color: #ffffff;
-        --border-color: #333333;
-        --primary-color: #2ecc71;
-        --primary-hover: #27ae60;
-        --card-hover-shadow: rgba(0, 0, 0, 0.5);
-        --accent-badge: #145a32;
-    }
+  :root {
+    --bg-color: #121212;
+    --container-bg: #1e1e1e;
+    --text-color: #e0e0e0;
+    --heading-color: #ffffff;
+    --border-color: #333333;
+    --primary-color: #2ecc71;
+    --primary-hover: #27ae60;
+    --card-hover-shadow: rgba(0, 0, 0, 0.5);
+    --accent-badge: #145a32;
+  }
 }
-
+comen
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
 }
 
-/* Navbar */
+/* Navbar e Layout compartilham a mesma estrutura visual base */
 .navbar {
-    background-color: var(--container-bg);
-    border-bottom: 1px solid var(--border-color);
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: var(--container-bg);
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar-brand h2 {
-    color: var(--heading-color);
-    font-size: 1.3rem;
+  color: var(--heading-color);
+  font-size: 1.3rem;
 }
 
 .user-info {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .user-name {
-    font-weight: 600;
-    color: var(--text-color);
+  font-weight: 600;
+  color: var(--text-color);
 }
 
 .btn-logout {
-    color: #e74c3c;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 0.4rem 0.8rem;
-    border: 1px solid #e74c3c;
-    border-radius: 4px;
-    transition: all 0.2s ease;
+  color: #e74c3c;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #e74c3c;
+  border-radius: 4px;
+  transition: all 0.2s ease;
 }
 
 .btn-logout:hover {
-    background-color: #e74c3c;
-    color: #ffffff;
+  background-color: #e74c3c;
+  color: #ffffff;
 }
 
-/* Layout Principal */
 .dashboard-container {
-    max-width: 1100px;
-    margin: 2rem auto;
-    padding: 0 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
-/* Estilo dos Cartões Base */
 .card {
-    background-color: var(--container-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 1.5rem;
+  background-color: var(--container-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
 }
 
-/* Cartão do Professor / Informações */
 .course-card {
-    border-left: 5px solid var(--primary-color);
+  border-left: 5px solid var(--primary-color); /* Borda lateral verde */
 }
 
 .course-card .card-header h3 {
-    color: var(--heading-color);
-    margin-bottom: 0.5rem;
+  color: var(--heading-color);
+  margin-bottom: 0.5rem;
 }
 
 .course-name {
-    color: var(--primary-color);
-    font-size: 1.2rem;
-    margin-bottom: 0.8rem;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
 }
 
 .course-detail {
-    font-size: 0.95rem;
-    margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
 }
 
-/* Grid de Módulos */
 .modules-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
 }
 
 .module-card {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .module-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 16px var(--card-hover-shadow);
-    border-color: var(--primary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px var(--card-hover-shadow);
+  border-color: var(--primary-color);
 }
 
 .module-icon {
-    font-size: 2rem;
-    background-color: var(--accent-badge);
-    padding: 0.6rem;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  font-size: 2rem;
+  background-color: var(--accent-badge);
+  padding: 0.6rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .module-content h3 {
-    color: var(--heading-color);
-    font-size: 1.1rem;
-    margin-bottom: 0.4rem;
+  color: var(--heading-color);
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
 }
 
 .module-content p {
-    font-size: 0.88rem;
-    line-height: 1.4;
-    color: var(--text-color);
-    opacity: 0.9;
+  font-size: 0.88rem;
+  line-height: 1.4;
+  color: var(--text-color);
+  opacity: 0.9;
 }
