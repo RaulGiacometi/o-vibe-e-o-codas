@@ -93,3 +93,19 @@ loginForm.addEventListener("submit", function (event) {
     window.location.href = "coordenador.html"; // Vai para a tela do coordenador
   }
 });
+
+function trocarAba(nomeAba) {
+  // 1. Esconde todas as seções de conteúdo
+  const abas = document.querySelectorAll(".aba-conteudo");
+  abas.forEach((aba) => aba.classList.remove("ativa"));
+
+  // 2. Remove o destaque de todos os cards do menu
+  const cards = document.querySelectorAll(".module-card");
+  cards.forEach((card) => card.classList.remove("active"));
+
+  // 3. Mostra apenas a seção correspondente à aba clicada
+  document.getElementById(`aba-${nomeAba}`).classList.add("ativa");
+
+  // 4. Destaca visualmente o card clicado no menu
+  event.currentTarget.classList.add("active");
+}

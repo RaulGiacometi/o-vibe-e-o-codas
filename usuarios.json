@@ -1,0 +1,48 @@
+{
+  "alunos": [
+    {
+      "id": 1,
+      "ra": "20261001",
+      "senha": "123",
+      "nome": "Carlos Silva",
+      "curso": "Análise e Desenvolvimento de Sistemas",
+      "semestre": "2º Semestre"
+    },
+    {
+      "id": 2,
+      "ra": "20261002",
+      "senha": "123",
+      "nome": "Mariana Souza",
+      "curso": "Análise e Desenvolvimento de Sistemas",
+      "semestre": "2º Semestre"
+    }
+  ],
+  "professores": [
+    {
+      "id": 1,
+      "matricula": "PROF501",
+      "senha": "123",
+      "nome": "Prof. Roberto Carlos",
+      "departamento": "Computação e Informática",
+      "disciplinas": ["Programação Web", "Banco de Dados"]
+    },
+    {
+      "id": 2,
+      "matricula": "PROF502",
+      "senha": "123",
+      "nome": "Professora Ana Paula",
+      "departamento": "Computação e Informática",
+      "disciplinas": ["Engenharia de Software", "Estrutura de Dados"]
+    }
+  ],
+  "coordenadores": [
+    {
+      "id": 1,
+      "identificador": "111.222.333-44",
+      "senha": "123",
+      "nome": "Coordenador Carlos Eduardo",
+      "departamento": "Tecnologia da Informação",
+      "cursoGerenciado": "Análise e Desenvolvimento de Sistemas"
+    }
+  ]
+}

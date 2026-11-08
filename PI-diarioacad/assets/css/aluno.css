@@ -180,3 +180,18 @@ body {
   color: var(--text-color);
   opacity: 0.9;
 }
+
+/* Estilos de visibilidade das abas (SPA) */
+.aba-conteudo {
+  display: none;
+}
+
+.aba-conteudo.ativa {
+  display: block;
+}
+
+/* Estilo visual para o card ativo */
+.module-card.active {
+  border: 2px solid #007bff;
+  background-color: #f0f8ff;
+}

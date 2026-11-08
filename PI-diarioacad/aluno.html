@@ -22,62 +22,120 @@
     <!-- Conteúdo Principal / Dashboard -->
     <main class="dashboard-container">
 
-        <!-- Cartão com Informações do Curso -->
-        <section class="card course-card">
-            <div class="card-header">
-                <h3>Meu Curso</h3>
-            </div>
-            <div class="card-body">
-                <h4 class="course-name">Análise e Desenvolvimento de Sistemas</h4>
-                <p class="course-detail"><strong>Turno:</strong> Noturno</p>
-                <p class="course-detail"><strong>Termo/Semestre:</strong> 2º Semestre</p>
-                <p class="course-detail"><strong>Situação:</strong> Matrocinado / Ativo</p>
-            </div>
-        </section>
-
-        <!-- Grid com os Módulos Principais -->
+        <!-- Grid com os Módulos Principais (Menu de Navegação) -->
         <div class="modules-grid">
 
+            <!-- Módulo: Início / Resumo (Opcional, caso queira voltar para a visão geral) -->
+            <div onclick="trocarAba('inicio')" class="card module-card active" style="cursor: pointer;">
+                <div class="module-icon">🏠</div>
+                <div class="module-content">
+                    <h3>Início</h3>
+                    <p>Visão geral do curso e informações principais.</p>
+                </div>
+            </div>
+
             <!-- Módulo: Ver Notas -->
-            <a href="#" class="card module-card">
+            <div onclick="trocarAba('notas')" class="card module-card" style="cursor: pointer;">
                 <div class="module-icon">📊</div>
                 <div class="module-content">
                     <h3>Ver Notas</h3>
                     <p>Consulte suas avaliações e médias parciais/finais por disciplina.</p>
                 </div>
-            </a>
+            </div>
 
             <!-- Módulo: Presença e Faltas -->
-            <a href="#" class="card module-card">
+            <div onclick="trocarAba('presenca')" class="card module-card" style="cursor: pointer;">
                 <div class="module-icon">📋</div>
                 <div class="module-content">
                     <h3>Presença e Faltas</h3>
                     <p>Acompanhe sua porcentagem de frequência e total de faltas.</p>
                 </div>
-            </a>
-            <!--Qualquer Coisa-->
+            </div>
+
             <!-- Módulo: Calendário Acadêmico -->
-            <a href="#" class="card module-card">
+            <div onclick="trocarAba('calendario')" class="card module-card" style="cursor: pointer;">
                 <div class="module-icon">📅</div>
                 <div class="module-content">
                     <h3>Calendário Acadêmico</h3>
                     <p>Confira datas de provas, feriados, recessos e prazos de entrega.</p>
                 </div>
-            </a>
+            </div>
 
             <!-- Módulo: Comunicados -->
-            <a href="#" class="card module-card">
+            <div onclick="trocarAba('comunicados')" class="card module-card" style="cursor: pointer;">
                 <div class="module-icon">📢</div>
                 <div class="module-content">
                     <h3>Comunicados</h3>
                     <p>Avisos da coordenação, recados de professores e eventos.</p>
                 </div>
-            </a>
+            </div>
 
         </div>
 
+        <hr style="margin: 30px 0; border: 0; border-top: 1px solid #ddd;">
+
+        <!-- ÁREAS DE CONTEÚDO DAS SUB-ABAS -->
+
+        <!-- 1. Aba Início -->
+        <section id="aba-inicio" class="aba-conteudo ativa">
+            <section class="card course-card">
+                <div class="card-header">
+                    <h3>Meu Curso</h3>
+                </div>
+                <div class="card-body">
+                    <h4 class="course-name">Análise e Desenvolvimento de Sistemas</h4>
+                    <p class="course-detail"><strong>Turno:</strong> Noturno</p>
+                    <p class="course-detail"><strong>Termo/Semestre:</strong> 2º Semestre</p>
+                    <p class="course-detail"><strong>Situação:</strong> Matriculado / Ativo</p>
+                </div>
+            </section>
+        </section>
+
+        <!-- 2. Aba Ver Notas -->
+        <section id="aba-notas" class="aba-conteudo">
+            <div class="card">
+                <div class="card-header"><h3>Minhas Notas</h3></div>
+                <div class="card-body">
+                    <p>Tabela de notas do semestre (exemplo).</p>
+                    <!-- Insira sua <table> aqui futuramente -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Aba Presença -->
+        <section id="aba-presenca" class="aba-conteudo">
+            <div class="card">
+                <div class="card-header"><h3>Controle de Presença e Faltas</h3></div>
+                <div class="card-body">
+                    <p>Acompanhamento de frequência por disciplina.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Aba Calendário -->
+        <section id="aba-calendario" class="aba-conteudo">
+            <div class="card">
+                <div class="card-header"><h3>Calendário Acadêmico</h3></div>
+                <div class="card-body">
+                    <p>Lista de eventos e datas importantes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Aba Comunicados -->
+        <section id="aba-comunicados" class="aba-conteudo">
+            <div class="card">
+                <div class="card-header"><h3>Mural de Comunicados</h3></div>
+                <div class="card-body">
+                    <p>Avisos recentes da instituição.</p>
+                </div>
+            </div>
+        </section>
+
     </main>
 
+    <!-- Script JavaScript para gerenciar a troca de abas -->
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
