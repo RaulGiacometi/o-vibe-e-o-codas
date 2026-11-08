@@ -6,17 +6,28 @@
 
 /* Cores Padrão (Modo Claro / Light Mode) */
 :root {
-  --bg-color: #f4f7f6;          /* Cor de fundo geral da página */
-  --container-bg: #ffffff;      /* Cor de fundo do card/caixa de login */
-  --text-color: #34495e;        /* Cor padrão dos textos e labels */
-  --heading-color: #2c3e50;     /* Cor dos títulos principais (H2) */
-  --input-bg: #ffffff;          /* Cor de fundo dos campos de texto */
-  --input-border: #ccc;         /* Cor das bordas dos inputs */
-  --input-text: #000000;        /* Cor do texto digitado pelo usuário */
-  --btn-bg: #2980b9;            /* Cor de fundo do botão principal (Azul) */
-  --btn-hover: #1b6391;         /* Cor do botão principal ao passar o mouse */
-  --tab-color: #7f8c8d;         /* Cor das abas de perfil inativas */
-  --tab-active-color: #2980b9;  /* Cor da aba de perfil selecionada */
+  --bg-color: #f4f7f6;
+  /* Cor de fundo geral da página */
+  --container-bg: #ffffff;
+  /* Cor de fundo do card/caixa de login */
+  --text-color: #34495e;
+  /* Cor padrão dos textos e labels */
+  --heading-color: #2c3e50;
+  /* Cor dos títulos principais (H2) */
+  --input-bg: #ffffff;
+  /* Cor de fundo dos campos de texto */
+  --input-border: #ccc;
+  /* Cor das bordas dos inputs */
+  --input-text: #000000;
+  /* Cor do texto digitado pelo usuário */
+  --btn-bg: #2980b9;
+  /* Cor de fundo do botão principal (Azul) */
+  --btn-hover: #1b6391;
+  /* Cor do botão principal ao passar o mouse */
+  --tab-color: #7f8c8d;
+  /* Cor das abas de perfil inativas */
+  --tab-active-color: #2980b9;
+  /* Cor da aba de perfil selecionada */
 }
 
 /* Detecção Automática do Tema Escuro do Sistema (Dark Mode nativo) */
@@ -41,18 +52,23 @@
    Remove margens e paddings padrão do navegador e define a fonte base.
    ========================================================================== */
 * {
-  box-sizing: border-box; /* Garante que padding não aumente a largura total dos elementos */
+  box-sizing: border-box;
+  /* Garante que padding não aumente a largura total dos elementos */
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  background-color: var(--bg-color); /* Puxa a cor de fundo da variável */
+  background-color: var(--bg-color);
+  /* Puxa a cor de fundo da variável */
   display: flex;
-  justify-content: center; /* Centraliza o conteúdo horizontalmente na tela */
-  align-items: center;     /* Centraliza o conteúdo verticalmente na tela */
-  min-height: 100vh;       /* Garante que o corpo ocupe 100% da altura da tela */
+  justify-content: center;
+  /* Centraliza o conteúdo horizontalmente na tela */
+  align-items: center;
+  /* Centraliza o conteúdo verticalmente na tela */
+  min-height: 100vh;
+  /* Garante que o corpo ocupe 100% da altura da tela */
   color: var(--text-color);
 }
 
@@ -63,10 +79,14 @@ body {
 .login-container {
   background: var(--container-bg);
   width: 100%;
-  max-width: 420px;       /* Limita a largura máxima do box em telas grandes */
-  padding: 2rem;          /* Espaçamento interno */
-  border-radius: 8px;     /* Arredondamento das bordas */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra suave ao redor */
+  max-width: 420px;
+  /* Limita a largura máxima do box em telas grandes */
+  padding: 2rem;
+  /* Espaçamento interno */
+  border-radius: 8px;
+  /* Arredondamento das bordas */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  /* Sombra suave ao redor */
 }
 
 /* Cabeçalho do Login (Título) */
@@ -87,16 +107,19 @@ body {
 }
 
 .tab-btn {
-  flex: 1;                 /* Faz com que cada botão ocupe o mesmo espaço horizontal */
+  flex: 1;
+  /* Faz com que cada botão ocupe o mesmo espaço horizontal */
   padding: 0.6rem 0;
   background: none;
   border: none;
   font-weight: 600;
   color: var(--tab-color);
   cursor: pointer;
-  transition: all 0.2s ease; /* Suaviza a transição de cores */
+  transition: all 0.2s ease;
+  /* Suaviza a transição de cores */
   border-bottom: 2px solid transparent;
-  margin-bottom: -2px;     /* Alinha a borda ativa perfeitamente sobre a linha do container */
+  margin-bottom: -2px;
+  /* Alinha a borda ativa perfeitamente sobre a linha do container */
 }
 
 /* Estado da aba quando selecionada/clicada */
@@ -109,11 +132,13 @@ body {
    5. FORMULÁRIO, CAMPOS E BOTÕES
    ========================================================================== */
 .form-group {
-  margin-bottom: 1.2rem;   /* Espaço entre um campo e outro */
+  margin-bottom: 1.2rem;
+  /* Espaço entre um campo e outro */
 }
 
 .form-group label {
-  display: block;          /* Faz o label ficar em cima do input */
+  display: block;
+  /* Faz o label ficar em cima do input */
   margin-bottom: 0.4rem;
   color: var(--text-color);
   font-size: 0.9rem;
@@ -121,14 +146,16 @@ body {
 }
 
 .form-group input {
-  width: 100%;             /* O input ocupa toda a largura disponível */
+  width: 100%;
+  /* O input ocupa toda a largura disponível */
   padding: 0.75rem;
   background-color: var(--input-bg);
   color: var(--input-text);
   border: 1px solid var(--input-border);
   border-radius: 4px;
   font-size: 0.95rem;
-  outline: none;           /* Remove a borda padrão de foco do navegador */
+  outline: none;
+  /* Remove a borda padrão de foco do navegador */
 }
 
 /* Efeito visual quando o usuário clica para digitar no input */

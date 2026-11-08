@@ -7,10 +7,12 @@
   --text-color: #34495e;
   --heading-color: #2c3e50;
   --border-color: #e0e0e0;
-  --primary-color: #27ae60;       /* Verde principal do professor */
+  --primary-color: #27ae60;
+  /* Verde principal do professor */
   --primary-hover: #1e8449;
   --card-hover-shadow: rgba(0, 0, 0, 0.12);
-  --accent-badge: #e8f8f5;        /* Fundo verde claro para os ícones */
+  --accent-badge: #e8f8f5;
+  /* Fundo verde claro para os ícones */
 }
 
 /* Modo Escuro Automático */
@@ -27,8 +29,8 @@
     --accent-badge: #145a32;
   }
 }
-comen
-* {
+
+comen * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -99,7 +101,8 @@ body {
 }
 
 .course-card {
-  border-left: 5px solid var(--primary-color); /* Borda lateral verde */
+  border-left: 5px solid var(--primary-color);
+  /* Borda lateral verde */
 }
 
 .course-card .card-header h3 {

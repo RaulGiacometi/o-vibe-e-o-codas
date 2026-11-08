@@ -7,10 +7,13 @@
   --text-color: #34495e;
   --heading-color: #2c3e50;
   --border-color: #e0e0e0;
-  --primary-color: #2980b9;       /* Azul principal do aluno */
+  --primary-color: #2980b9;
+  /* Azul principal do aluno */
   --primary-hover: #1b6391;
-  --card-hover-shadow: rgba(0, 0, 0, 0.12); /* Sombra ao passar o mouse nos cards */
-  --accent-badge: #eaf2f8;        /* Fundo suave para os ícones */
+  --card-hover-shadow: rgba(0, 0, 0, 0.12);
+  /* Sombra ao passar o mouse nos cards */
+  --accent-badge: #eaf2f8;
+  /* Fundo suave para os ícones */
 }
 
 /* Modo Escuro Automático */
@@ -49,7 +52,8 @@ body {
   border-bottom: 1px solid var(--border-color);
   padding: 1rem 2rem;
   display: flex;
-  justify-content: space-between; /* Mantém o logo na esquerda e o botão de sair na direita */
+  justify-content: space-between;
+  /* Mantém o logo na esquerda e o botão de sair na direita */
   align-items: center;
 }
 
@@ -90,11 +94,13 @@ body {
    ========================================================================== */
 .dashboard-container {
   max-width: 1100px;
-  margin: 2rem auto;       /* Centraliza o painel na tela com margem superior */
+  margin: 2rem auto;
+  /* Centraliza o painel na tela com margem superior */
   padding: 0 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;             /* Espaçamento vertical entre blocos */
+  gap: 1.5rem;
+  /* Espaçamento vertical entre blocos */
 }
 
 .card {
