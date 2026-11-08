@@ -30,6 +30,7 @@
   }
 }
 
+/* Reset global */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -43,6 +44,9 @@ body {
   min-height: 100vh;
 }
 
+/* ==========================================================================
+   2. BARRA DE NAVEGAÇÃO E LAYOUT GERAL
+   ========================================================================== */
 .navbar {
   background-color: var(--container-bg);
   border-bottom: 1px solid var(--border-color);
@@ -92,6 +96,9 @@ body {
   gap: 1.5rem;
 }
 
+/* ==========================================================================
+   3. CARTÕES E GRID DE MÓDULOS DO COORDENADOR
+   ========================================================================== */
 .card {
   background-color: var(--container-bg);
   border: 1px solid var(--border-color);
@@ -101,7 +108,7 @@ body {
 
 .course-card {
   border-left: 5px solid var(--primary-color);
-  /* Borda lateral roxa */
+  /* Borda lateral roxa diferenciando o perfil */
 }
 
 .course-card .card-header h3 {

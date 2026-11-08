@@ -30,7 +30,8 @@
   }
 }
 
-comen * {
+/* Reset global corrigido */
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -43,7 +44,9 @@ body {
   min-height: 100vh;
 }
 
-/* Navbar e Layout compartilham a mesma estrutura visual base */
+/* ==========================================================================
+   2. NAVBAR E ESTRUTURA VISUAL BASE
+   ========================================================================== */
 .navbar {
   background-color: var(--container-bg);
   border-bottom: 1px solid var(--border-color);
@@ -93,6 +96,9 @@ body {
   gap: 1.5rem;
 }
 
+/* ==========================================================================
+   3. CARDS E GRID DE MÓDULOS DO PROFESSOR
+   ========================================================================== */
 .card {
   background-color: var(--container-bg);
   border: 1px solid var(--border-color);
@@ -102,7 +108,7 @@ body {
 
 .course-card {
   border-left: 5px solid var(--primary-color);
-  /* Borda lateral verde */
+  /* Borda lateral verde para identificar a área docente */
 }
 
 .course-card .card-header h3 {
